@@ -1,4 +1,4 @@
-pagina creada por jesus quintero.
+pagina creada por quintero jesus.
 proyecto para academia TICMAS 
 
 por percanses no contaba con equipo para hacer el curso,
