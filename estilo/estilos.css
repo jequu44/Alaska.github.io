@@ -1,5 +1,7 @@
 
 
+*
+
 *{
     margin: 0;
     padding: 0;
@@ -62,7 +64,7 @@ body {
 
 .header {
     height: 129vh !important;
-    background: url(/header.jpg) no-repeat center;
+    background: url(https://raw.githubusercontent.com/jequu44/Alaska.github.io/4878657c84a4cf045dd12c7dbc607b9ed4fc3f1b/header.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -168,7 +170,7 @@ p {
 }
 
 .price {
-    background: url(/costos.jpg) no-repeat center;
+    background: url(https://raw.githubusercontent.com/jequu44/Alaska.github.io/4878657c84a4cf045dd12c7dbc607b9ed4fc3f1b/costos.jpg) no-repeat center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
