@@ -173,7 +173,7 @@ h1 {
     background-color: aquamarine;
 }
 .titulo{
-    font-size: 6em;
+    font-size: 5em;
     background: linear-gradient(90deg, #26e6cb 25%, #fff 25%, #2ff912 50%, #16fb02 50%, #fff 75%, #fff 75%, #fff 100%);
     background-clip: border-box;
     background-size: auto;
