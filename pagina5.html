@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Overflow</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<input type="checkbox" id="botonMenu">
+		<label for="botonMenu"><img src="img/ico2.PNG" alt=""></label>
+	  <nav class="menu">
+		 <ul>
+                   <li><a href="index.html">INICIO</a></li>
+                   <li><a href="pagina2.html">NIKE</a></li>
+                   <li><a href="pagina3.html">ADIDAS</a></li>
+                   <li><a href="pagina4.html">PUMA</a></li>
+                   <li class="activo"><a href="pagina5.html">CONTACTO</a></li>
+         </ul> 
+	  </nav>
+ </header>
+
+
+<section id="informacion-contacto">
+        <h2>Información de Contacto</h2>
+        <p>Ponte en contacto con nosotros para obtener más información sobre nuestros productos y servicios.</p>
+        <address>
+            <p>Dirección: Zurita 393, Miami</p>
+            <p>Teléfono:  (+54) 3834-668392</p>
+            <p>Correo: Correo: info@Overflow.com</p>
+        </address>
+    </section>
+
+    <section id="formulario-contacto">
+        <h2>Formulario de Contacto</h2>
+        <form action="procesar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+      <div class="footer-logo">
+        <img src="img/footer.jpg" alt="Logo">
+      </div>
+      <div class="footer-info">
+        <p>© 2023 Overflow</p>
+        <p>Dirección: Zurita 393, Miami </p>
+        <p>Teléfono: (+54) 3834-668392</p>
+        <p>Correo: info@Overflow.com</p>
+      </div>
+    </div>
+    </footer>
+
+
+</body>
+</html>

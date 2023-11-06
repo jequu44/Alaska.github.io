@@ -1,0 +1,820 @@
+body{
+	margin:0;
+	font-family: 'Roboto', sans-serif;   
+
+
+}
+
+#botonMenu{
+	display:none;
+
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right:0px solid #000;
+
+}
+header label:hover{
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+
+}
+
+
+.menu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+    font-size: x-large;
+    }
+
+/*.menu li{
+	border-right: 1px solid #fff;     bordes en el menu 
+}*/
+.menu li a{
+	display: block;
+	padding: 13px 20px;
+	color: #000;
+	text-decoration: none;
+    border-radius: 57px;
+
+}
+.menu li:hover{
+    background: rgba(249, 187, 0, 0.76);
+    border-radius: 32px;
+}
+.parrafo{
+	padding: 20px;
+	text-align: justify;
+}
+
+@media ( max-width: 768px){
+	header label{
+		display: block;
+	}
+	.menu{
+		position: absolute;
+		width: 100%;
+        margin-left: -100%;
+		-moz-transition:all 0.8s;
+	    -webkit-transition:all 0.5s;
+        backdrop-filter: blur(7px);
+        background-color: rgba(0, 255, 207, 0.22);
+
+	}
+    .menu ul{
+    	flex-direction: column;
+    	-webkit-flex-direction:column;
+    }	
+    .menu li a:hover{
+    background: rgba(253, 192, 10, 0.89);
+    border-radius: 32px;
+}
+    /*.menu li{
+    	border-top: 1px solid #fff;
+bordes de menu lineqas 
+    }*/
+    #botonMenu:checked ~ .menu{
+    	margin: 0;
+    }
+    .menu li a{
+    	color: #000;
+    	font-size: 1.3em;
+    	font-weight: 600;
+    	border-radius: 22px;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+    .menu li:hover {
+    	background: rgba(93,181,255,0.5);
+    }
+}
+.activo a{
+    color: black;
+      font-size: 24px;
+      background-color: aqua;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 20px;
+    color: black;
+    width: 70%;
+    float: left;
+
+}
+.caja-slider{
+        margin: -35px;
+        margin-top: -4px;
+        background-color: #6262620f;
+        width: 23%;
+        float: right;
+        border-radius: 51px;
+        margin-top: 33px;
+        margin-right: 13px
+    }
+
+.titulo-slider{
+    padding: 17px;
+    margin: 0;
+    background-color: #5cffcab2;
+    border-radius: 7px;
+}
+.clearFix{
+    clear: both;
+}
+.car1{
+    margin: 0%;
+}
+
+@media (max-width: 768px) {
+          .contenedor {
+            max-width: 1200px;
+            margin: 0px auto;
+            padding: 20px;
+            color: black;
+            width: 100%;
+            
+
+        }
+        .caja-slider{
+            margin: -4px;
+            background-color: #fff;
+            width: 92%;
+            border-radius: 50px;
+                
+        }
+footer {
+      background: #333;
+      color: #fff;
+      padding: 22px 40%;
+      text-align: center;
+    }
+}
+
+h1 {
+    color: #044248;
+    padding: 16px;
+    margin: 0;
+    background-color: aquamarine;
+}
+.titulo{
+    font-size: 6em;
+    background: linear-gradient(90deg, #26e6cb 25%, #fff 25%, #2ff912 50%, #16fb02 50%, #fff 75%, #fff 75%, #fff 100%);
+    background-clip: border-box;
+    background-size: auto;
+    background-size: 108px 108px;
+    padding: 16px;
+    margin: -32px;
+    text-shadow: -13px 5px 22px rgba(0, 0, 0, 0.55);
+    -webkit-background-clip: text;
+    color: #fff0f000;
+}
+
+/* Estilos del encabezado y el título */
+header {
+    background-color: #2f2f2f;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos de la sección de descripción */
+.descripcion {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 105px;
+}
+
+.descripcion img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.descripcion p {
+     font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 12px 1px;
+    background: linear-gradient(to right, #8df7b6bd, #33ccbe);
+    border-radius:0 0 40px 40px; /* Agregamos espacio interior para mejorar el aspecto estético en dispositivos más pequeños */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    .descripcion {
+        margin: 60px;
+        font-size: 1em; /* Ajustamos el tamaño de fuente para dispositivos más pequeños */
+    padding: 5px 10px;
+    }
+}
+.parrafo {
+    max-width: 800px; /* Establece un ancho máximo para el contenido */
+    margin: 0 auto; /* Centra el contenido en el centro de la página */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+
+    /* Estilos para encabezados y párrafos dentro de la clase "parrafo" */
+ /*   h1 {
+        font-size: 2em; /* Tamaño de fuente para encabezados */
+    }
+
+    
+
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .parrafo {
+        max-width: 90%; /* Reduce el ancho máximo en pantallas pequeñas */
+        padding: 10px; /* Reduce el espacio alrededor del contenido en pantallas pequeñas */
+
+        h1 {
+            font-size: 1.5em; /* Reducción del tamaño de fuente en pantallas pequeñas */
+        }
+
+        p {
+            font-size: 1em; /* Reducción del tamaño de fuente en pantallas pequeñas */
+        }
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image {
+    position: relative;
+}
+
+.image img {
+    width: 300px;
+    height: 200
+
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contacto h2 {
+    font-size: 24px;
+}
+
+.contacto p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .contacto {
+        padding: 10px;
+    }
+    .contacto h2 {
+        font-size: 20px;
+    }
+    .contacto p {
+        font-size: 14px;
+    }
+ }
+
+
+
+
+.slider-contenedor{
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+img {
+    max-width: 55%;
+    height: auto;
+}
+
+/* Estilos para el slider */
+.slider-contenedor {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+/* Transiciones de diapositivas */
+.slider {
+    animation: slide 12s linear infinite;
+}
+/*fondo de info de slider*/
+.slide-info{
+    background: linear-gradient(to right, #8df7b6bd, #33ccbe);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+}
+.slide-info h3{
+    background-color:white;
+   
+}
+.slide-info h2{
+    background-color: white;
+
+}
+.slide-info p {
+    margin-right: 0%;
+    margin-left: 0%;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 2.5vw;
+    background: black;
+    border-bottom-left-radius: 46px;
+    border-bottom-right-radius: 56px;
+    color: white;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    55% {
+        transform: translateX(-100%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    85% {
+        transform: translateX(-200%);
+    }
+    90% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+
+
+
+
+
+
+
+.cartelera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartel {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.cartel:hover {
+    transform: scale(1.05);
+}
+
+.cartel img {
+    max-width: 100%;
+}
+
+.cartel h3 {
+    font-size: 1.5em;
+    background-color: #00ffff54;
+}
+
+.cartel p {
+    font-size: 1em;
+    color: #777;
+}
+
+.cartel a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #0074D9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cartel a:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* lista galeria de productos PAGINA NIKE*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: -2;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product .image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product .image img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.product .image img:hover {
+    transform: scale(1.1);
+}
+
+.product h2 {
+    font-size: 1.5em;
+}
+
+.product p {
+    font-size: 1em;
+    color: black;
+    background: linear-gradient(to right, #41f487bd, #4dcc33);
+}
+
+.product .price {
+    font-size: 1.2em;
+    color: #0074D9;
+    font-weight: bold;
+}
+
+
+
+.nike{
+color: #fff;
+padding: 16px;
+margin: 0;
+background: linear-gradient(to right, #41f4d3, #3c3);
+
+}
+
+/*pagina3*/
+.adidas{
+color: #fff;
+padding: 27px;
+margin: 0;
+background: linear-gradient(to bottom, #fff 0%, #fff 33%, #0636f2 33%, #0930f2 66%, #fff 66%, #fff 100% );
+border-top: 16px solid #0ac3ee;
+border-bottom: 19px solid #0ac3ee;
+}
+.productad-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: -2;
+    position: absolute;
+    justify-content: center;
+
+}
+
+.productad {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.productad:hover {
+    transform: scale(1.05);
+}
+
+.productad .image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.productad .image img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.productad .image img:hover {
+    transform: scale(1.1);
+}
+
+.productad h2 {
+    font-size: 1.5em;
+    background-color: #120cc6c2;
+    color: white;
+    border-radius: 50px;
+}
+
+.productad p {
+    font-size: 1em;
+    color:white;
+    background-color: #4a46d37d;
+}
+
+.productad .price {
+    font-size: 1.2em;
+    color: #0074D9;
+    font-weight: bold;
+}
+
+
+/*pagina4*/
+
+.puma{
+color: #fff;
+padding: 27px;
+margin: 0;
+background: linear-gradient(to bottom, #fff 0%, #fffbfb 33%, #000 33%, #090909 66%, #fff 66%, #fff 100%);
+
+}
+.productpu-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: -2;
+    position: absolute;
+    justify-content: center;
+}
+
+.productpu {
+    width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.productpu:hover {
+    transform: scale(1.05);
+}
+
+.productpu .image {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.productpu .image img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.productpu .image img:hover {
+    transform: scale(1.1);
+}
+
+.productpu h2 {
+    font-size: 1.5em;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+}
+
+.productpu p {
+    font-size: 1em;
+    color:white;
+    background-color: black;
+}
+
+.productpu .price {
+    font-size: 1.2em;
+    color: #0074D9;
+    font-weight: bold;
+}
+
+
+
+
+/* Estilos generales para el footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 22px 43%;
+    text-align: center;
+}
+
+/* Estilos para la sección del contenido del footer */
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para el logo en el footer */
+.footer-logo img {
+  width: 100px; /* Tamaño del logo */
+}
+
+/* Estilos para la información de contacto en el footer */
+.footer-info {
+  margin-top: 10px;
+}
+
+/* Estilos responsivos para dispositivos pequeños (ajusta según tus necesidades) */
+@media (max-width: 768px) {
+  .footer-logo img {
+    width: 80px; /* Tamaño del logo en dispositivos pequeños */
+  }
+}
+
+
+
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilos para el formulario de contacto */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el footer */
+
+
+/* Estilos responsivos (ajusta según tus necesidades) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+#formulario-contacto {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#formulario-contacto h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#formulario-contacto label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formulario-contacto button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#formulario-contacto button:hover {
+    background-color: #555;
+}
